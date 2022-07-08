@@ -13,7 +13,7 @@ export default function TextCard(props) {
           </a>
         </div>
       </div>
-      <img className="card-img" src={props?.img} />
+      <img className="card-img" alt ="img"src={props?.img} />
     </div>
   );
 }
