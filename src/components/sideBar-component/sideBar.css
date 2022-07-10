@@ -35,6 +35,7 @@
 }
 .sidebar-list-item {
  color: var(--primary-01);
+ text-decoration: none;
  
 }
 

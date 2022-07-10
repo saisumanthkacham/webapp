@@ -37,7 +37,7 @@ export default function SideBar() {
           </div>
           <br />
           <div className="sidebar-list-content">
-            {item.state&&item.data.map((ite) => (
+            {refresh&&item.data.map((ite) => (
               <a className="sidebar-list-item" href={ite.VALUE}>
                 {ite.KEY}
                 <br />
