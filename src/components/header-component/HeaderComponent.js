@@ -17,7 +17,7 @@ export default function HeaderComponent({burgerButton,setBurgerButton}) {
     }, []);
 
     const locationLink =
-        "https://app.lapentor.com/sphere/golden-heights-aerial?scene=629340da6d91ccc868034b6a";
+        "https://google.com";
     return (
         <div className="header-container">
 
@@ -38,7 +38,7 @@ export default function HeaderComponent({burgerButton,setBurgerButton}) {
                 )}
 
                 <a href={locationLink} className="header-right-icon ">
-                <i class="fas fa-map-marker-alt" ></i>
+                <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
