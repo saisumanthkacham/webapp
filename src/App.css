@@ -9,6 +9,9 @@
   background:var(--secondary-01)
 }
 
+.components{
+  z-index: 1;
+}
 
 :root{
   --primary-font-color:#9b9a9a ;

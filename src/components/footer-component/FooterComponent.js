@@ -8,7 +8,7 @@ export default function FooterComponent() {
                 <div className="footer-copyright">
                     <div className="footer-subheading"> About Us</div>
                     <div className="footer-subheading-content">
-                        VB GREEN INDIA INFRA is a leading Realestate Company in South India Striving
+                        VASUNDARA PROJECTS PVT.LTD is a leading Realestate Company in South India Striving
                         for Quality and Perfection to Provide you with the best luxurious and
                         affordable Residential and Commercial Projects.
                     </div>
@@ -16,7 +16,7 @@ export default function FooterComponent() {
                 <div className="footer-copyright">
                     <div className="footer-subheading"> Contact Us</div>
                     <div className="footer-subheading-content">
-                        <div className="footer-contact"> +91 9494256257 </div> vbgindiainfra
+                        <div className="footer-contact"> +91 9494256257 </div> vasundara
                         @gmail.com
                     </div>
                 </div>
