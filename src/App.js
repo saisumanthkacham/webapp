@@ -8,8 +8,8 @@ import "./App.css";
 import { useState } from "react";
 
 //importing images
-import Arch from "./images/Arch.jpg"
-import entrance from "./images/Entrance.jpg"
+import open from "./images/Open.jpg"
+import orchard from "./images/ORCHARD.jpg"
 import road from "./images/road.jpg"
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
           subHeading="from the world of palaces"
           para="Established in 2007 as an interior decoration firm in Hyderabad by Mr. K.V. Ramesh, Vasundara Projects has grown into one of the largest and most trusted names in real estate."
           link="read more ....."
-          img={entrance}
+          img={open}
         />
 
         <TextCard
@@ -36,7 +36,7 @@ function App() {
           subHeading="The Vision & DNA"
           para="Crafting a product that stands out entails attention to the finest of details. Ensuring exceptional quality, every time."
           link="read more ....."
-          img={Arch}
+          img={orchard}
         />
 
         <TextCard
