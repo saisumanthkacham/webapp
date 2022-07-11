@@ -12,7 +12,10 @@
 .components{
   z-index: 1;
 }
-
+#no-scroll{
+  pointer-events: none;
+  
+}
 :root{
   --primary-font-color:#9b9a9a ;
   --primary-01:#eec65f;;

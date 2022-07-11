@@ -20,7 +20,7 @@ function App() {
 
       {!burgerButton && <SideBar />}
 
-      <div className="components">
+      <div className="components" id={!burgerButton&&"no-scroll"}>
         <TextCard
           heading="legacy of craft"
           subHeading="from the world of palaces"
