@@ -6,6 +6,11 @@ import SideBar from "./components/sideBar-component/SideBar";
 import "./App.css";
 import { useState } from "react";
 
+//importing images
+import Arch from "./images/Arch.jpg"
+import entrance from "./images/Entrance.jpg"
+import road from "./images/road.jpg"
+
 function App() {
   const [footer, setFooter] = useState(false);
   const [burgerButton, setBurgerButton] = useState(true);
@@ -21,7 +26,7 @@ function App() {
           subHeading="from the world of palaces"
           para="Established in 2007 as an interior decoration firm in Hyderabad by Mr. K.V. Ramesh, Vasundara Projects has grown into one of the largest and most trusted names in real estate."
           link="read more ....."
-          img="https://www.sobharealty.com/uploads/home_content/123.jpg"
+          img={entrance}
         />
 
         <TextCard
@@ -29,7 +34,7 @@ function App() {
           subHeading="The Vision & DNA"
           para="Crafting a product that stands out entails attention to the finest of details. Ensuring exceptional quality, every time."
           link="read more ....."
-          img="https://www.sobharealty.com/uploads/home_content/1-1.jpg"
+          img={Arch}
         />
 
         <TextCard
@@ -37,7 +42,7 @@ function App() {
           subHeading="#HeartOfHyderabad"
           para="Sobha Hartland is an 8 million sq. ft. waterfront community of luxurious apartments, beautiful villas and high-end townhouses located in Hyderabad City."
           link="read more ....."
-          img="https://www.sobharealty.com/uploads/home_content/11.jpg"
+          img={road}
         />
 
         <Form />

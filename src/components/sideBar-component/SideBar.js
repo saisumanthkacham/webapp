@@ -5,12 +5,12 @@ export default function SideBar() {
   const data = [
     {
       title: "ABOUT US",
-      state:false,
+      state:true,
       data: [{ VALUE: "https://google.com", KEY: "About Vasundara Projects" }],
     },
     {
       title: "COMPLETED PROJECTS",
-      state:false,
+      state:true,
       data: [
         { KEY: "Tirumula Enclave", VALUE: "https://google.com" },
         { KEY: "Angel Hills  @ Ghatkesar", VALUE: "https://google.com" },
@@ -24,7 +24,7 @@ export default function SideBar() {
     },
     {
       title: "ON GOING PROJECTS",
-      state:false,
+      state:true,
       data: [
         { KEY: "Lorven's Paradise", VALUE: "https://google.com" },
         { KEY: "Lorven City", VALUE: "https://google.com" },
@@ -37,7 +37,7 @@ export default function SideBar() {
       ],
     }
   ];
-  const [refresh,setRefresh]=useState(false)
+  const [refresh,setRefresh]=useState(true)
 
   return (
     <div className="sidebar-wrapper">
