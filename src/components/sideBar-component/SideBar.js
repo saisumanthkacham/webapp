@@ -4,27 +4,40 @@ import "../sideBar-component/sideBar.css";
 export default function SideBar() {
   const data = [
     {
-      title: "VASUNDARA PROJECTS",
+      title: "ABOUT US",
+      state:false,
+      data: [{ VALUE: "https://google.com", KEY: "About Vasundara Projects" }],
+    },
+    {
+      title: "COMPLETED PROJECTS",
       state:false,
       data: [
-        { KEY: "PROJECT 1", VALUE: "https://google.com" },
-        { KEY: "PROJECT 2", VALUE: "https://google.com" },
-        { KEY: "PROJECT 3", VALUE: "https://google.com" },
-        { KEY: "PROJECT 4", VALUE: "https://google.com" },
+        { KEY: "Tirumula Enclave", VALUE: "https://google.com" },
+        { KEY: "Angel Hills  @ Ghatkesar", VALUE: "https://google.com" },
+        { KEY: "Lorven's Enclave  @ Ghatkesar", VALUE: "https://google.com" },
+        { KEY: "Victoria Valley  @ Ghatkesar", VALUE: "https://google.com" },
+        { KEY: "Lorven's Hiland", VALUE: "https://google.com" },
+        { KEY: "Vensai Township", VALUE: "https://google.com" },
+      
+        
       ],
     },
     {
-      title: "ABOUT US",
+      title: "ON GOING PROJECTS",
       state:false,
-      data: [{ VALUE: "https://google.com", KEY: "ABOUT VASUNDARA" }],
-    },
-    {
-      title: "CONTACT US",
-      state:false,
-      data: [{ VALUE: "https://google.com", KEY: "ABOUT VASUNDARA" }],
-    },
+      data: [
+        { KEY: "Lorven's Paradise", VALUE: "https://google.com" },
+        { KEY: "Lorven City", VALUE: "https://google.com" },
+        { KEY: "Lorven's Gold Leaf", VALUE: "https://google.com" },
+        { KEY: "Lorven's Fortune Club", VALUE: "https://google.com" },
+        { KEY: "Lorven's Fortune Homes", VALUE: "https://google.com" },
+        { KEY: "Lorven's Fortune Castle", VALUE: "https://google.com" },
+        { KEY: "Jubilee Hills @ Nalgonda", VALUE: "https://google.com" },
+        { KEY: "Kalwakurthy", VALUE: "https://google.com" },
+      ],
+    }
   ];
-  const [refresh,setRefresh]=useState(true)
+  const [refresh,setRefresh]=useState(false)
 
   return (
     <div className="sidebar-wrapper">
@@ -33,12 +46,12 @@ export default function SideBar() {
         <div className="sidebar-list" key={id}>
              <div style={{color:"white"}}>{refresh}</div>
           <div className="sidebar-list-title" onClick={()=>{item.state=(!item.state);setRefresh(!refresh)}}>
-            {item.title} <i class="fas fa-angle-down"></i>
+            {item.title} <i className="fas fa-angle-down"></i>
           </div>
           <br />
           <div className="sidebar-list-content">
-            {refresh&&item.data.map((ite) => (
-              <a className="sidebar-list-item" href={ite.VALUE}>
+            {refresh&&item?.data?.map((ite,id) => (
+              <a key={id} className="sidebar-list-item" href={ite?.VALUE}>
                 {ite.KEY}
                 <br />
               </a>

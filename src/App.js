@@ -19,7 +19,7 @@ function App() {
         <TextCard
           heading="legacy of craft"
           subHeading="from the world of palaces"
-          para="Established in 1976 as an interior decoration firm in Oman by Mr. PNC Menon, Sobha Realty has grown into one of the largest and most trusted names in real estate."
+          para="Established in 2007 as an interior decoration firm in Hyderabad by Mr. K.V. Ramesh, Vasundara Projects has grown into one of the largest and most trusted names in real estate."
           link="read more ....."
           img="https://www.sobharealty.com/uploads/home_content/123.jpg"
         />
@@ -34,8 +34,8 @@ function App() {
 
         <TextCard
           heading="VASUNDARA HARTLAND"
-          subHeading="#HeartOfDubai"
-          para="Sobha Hartland is an 8 million sq. ft. waterfront community of luxurious apartments, beautiful villas and high-end townhouses located in MBR City."
+          subHeading="#HeartOfHyderabad"
+          para="Sobha Hartland is an 8 million sq. ft. waterfront community of luxurious apartments, beautiful villas and high-end townhouses located in Hyderabad City."
           link="read more ....."
           img="https://www.sobharealty.com/uploads/home_content/11.jpg"
         />
@@ -44,11 +44,11 @@ function App() {
         <div onClick={() => setFooter(!footer)} className="footer-text">
           {footer ? (
             <div>
-              Less <i class="fas fa-angle-up "></i>
+              Less <i className="fas fa-angle-up "></i>
             </div>
           ) : (
             <div>
-              More <i class="fas fa-angle-down"></i>
+              More <i className="fas fa-angle-down"></i>
             </div>
           )}
         </div>
