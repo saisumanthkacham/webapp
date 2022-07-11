@@ -3,6 +3,7 @@ import Header from "./components/header-component/HeaderComponent";
 import TextCard from "./components/text-card-component/TextCard";
 import Form from "./components/form-component/FormComponent";
 import SideBar from "./components/sideBar-component/SideBar";
+import CarouselComponent from "./components/carousel-component/carousel";
 import "./App.css";
 import { useState } from "react";
 
@@ -21,6 +22,7 @@ function App() {
       {!burgerButton && <SideBar />}
 
       <div className="components" id={!burgerButton&&"no-scroll"}>
+        <CarouselComponent/>
         <TextCard
           heading="legacy of craft"
           subHeading="from the world of palaces"
