@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display&family=Roboto&display=swap");
+
+.container-left{
+  max-width: 20rem;
+}
+.wrapper-left{
+display: flex;
+flex-direction: column;
+text-align: left;
+background-color: black;
+padding: 1rem 2rem 3rem 1.5rem;
+width: 100%;
+font-family: "proximanovaregular"; 
+}
+
+.wrapper-body-left{
+  padding-left: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "playfairdisplayregular";
+  font-weight: 560;
+  letter-spacing: 0.83px;
+  font-size: 1.5rem;
+  border-left: solid #eec65f 4px;
+  padding-left: 1rem;
+
+  background-color: #eec65f;
+  background-image: linear-gradient(
+    135deg,
+    rgba(238, 198, 95, 1) 0%,
+    rgba(167, 111, 42, 1) 12%,
+    rgba(226, 184, 85, 1) 26%,
+    rgba(249, 242, 183, 1) 43%,
+    rgba(226, 184, 85, 1) 61%,
+    rgba(143, 94, 33, 1) 80%,
+    rgba(226, 184, 85, 1) 100%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+span {
+  color: white;
+}
+
+p {
+  color: #9b9a9a;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  line-height: 18px;
+  margin: 2rem 0;
+  width: 85%;
+}
+
+.read-page-link {
+  color: #eec65f;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 1rem 0 0 0;
+}
+
+.card-img-left{
+  width:100vw;
+  margin-bottom: -0.25rem;
+}
+
+@media only screen and (min-width: 650px) {
+
+  .container-left{
+    max-width: 100vw;
+    display: flex;
+    height: 27rem;
+}
+
+.wrapper-left{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: auto 2rem auto 7rem;
+  background-color: black;
+  justify-content: center;
+  font-family: "proximanovaregular";
+  width:40%;
+  
+}
+
+.card-img-left{
+  width:60%;
+  margin-bottom: -0.25rem;
+}
+
+}
